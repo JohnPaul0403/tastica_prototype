@@ -1,0 +1,20 @@
+<div id="<%= dom_id task %>">
+  <div>
+    <strong>Name:</strong>
+    <%= task.name %>
+  </div>
+
+  <div>
+    <strong>Status:</strong>
+    <%= task.status %>
+  </div>
+
+  <%= button_to task.status.humanize,
+      cycle_status_task_path(task),
+      method: :patch %>
+  <div>
+    <strong>Description:</strong>
+    <%= task.description %>
+  </div>
+
+</div>
