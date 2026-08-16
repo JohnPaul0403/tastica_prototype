@@ -3,6 +3,7 @@ Rails.application.routes.draw do
     member do
       patch :cycle_status
     end
+    resources :comments
   end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
